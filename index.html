@@ -2,12 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div>
-        <h1>Hello World</h1>
-    </div>
+    <section>
+        <center>
+            <h1>Calculator</h1>
+        </center>
+        <div class="main">
+            <div id="output">0</div>
+            <div onclick="valueClear()" class="clear">clear</div>
+            <div onclick="valueAppend('+')" class="optc">+</div>
+            <div onclick="valueAppend('-')" class="optc">--</div>
+            <div onclick="valueAppend('7')" class="num">7</div>
+            <div onclick="valueAppend('8')" class="num">8</div>
+            <div onclick="valueAppend('9')" class="num">9</div>
+            <div onclick="valueAppend('/')" class="optc">/</div>
+            <div onclick="valueAppend('4')" class="num">4</div>
+            <div onclick="valueAppend('5')" class="num">5</div>
+            <div onclick="valueAppend('6')" class="num">6</div>
+            <div onclick="valueAppend('*')" class="optc">x</div>
+            <div onclick="valueAppend('3')" class="num">3</div>
+            <div onclick="valueAppend('2')" class="num">2</div>
+            <div onclick="valueAppend('1')" class="num">1</div>
+            <div onclick="valueEval()" class="equal">=</div>
+            <div onclick="valueAppend('0')" class="num zero">0</div>
+            <div onclick="valueAppend('.')" class="num">.</div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
